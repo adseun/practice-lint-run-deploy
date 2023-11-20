@@ -1,0 +1,12 @@
+name: issues
+on:
+    issues:
+        types: [opened, edited, milestoned]
+jobs:
+    issues:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Issues event
+              run: echo "Issue has occurred"
+
+        
